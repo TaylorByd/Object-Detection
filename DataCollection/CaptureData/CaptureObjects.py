@@ -1,5 +1,6 @@
 import cv2
 import os
+import uuid
 
 # define a camera object
 cam = cv2.VideoCapture(0) 
@@ -17,12 +18,12 @@ for img_name in img_names:
         cv2.imshow('frame', frame)  
 
         k = cv2.waitKey(1)   
-        if k%256 == 32: 
+        if k%256 == 32:
             # The space key was pressed 
-            img_file_name = f"{img_name}_{img_counter}.png"
+            img_file_name = img_name + '.' + '{}.jpg'.format(str(uuid.uuid1()))
             path = f"./DataCollection/CaptureData/ObjectPhotos/{img_name}"
             cv2.imwrite(os.path.join(path, img_file_name), frame)
-            print("{} written!".format(img_file_name))
+            print(f"{img_counter} {img_file_name} written!")
             img_counter += 1
 
 # After the loop release the cap object 
