@@ -1,0 +1,26 @@
+<annotation>
+	<folder>TVRemote</folder>
+	<filename>TVRemote.a18e5c8c-fe9f-11ee-a6c4-40ec9998e28d.png</filename>
+	<path>C:\Users\Drakozi\source\repos\Object-Detection\DataCollection\CaptureData\ObjectPhotos\TVRemote\TVRemote.a18e5c8c-fe9f-11ee-a6c4-40ec9998e28d.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>960</width>
+		<height>540</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>TVRemote</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>467</xmin>
+			<ymin>178</ymin>
+			<xmax>539</xmax>
+			<ymax>414</ymax>
+		</bndbox>
+	</object>
+</annotation>
