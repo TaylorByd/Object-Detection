@@ -1,0 +1,26 @@
+<annotation>
+	<folder>StanleyCup</folder>
+	<filename>StanleyCup.5b669dc6-fe9f-11ee-9765-40ec9998e28d.png</filename>
+	<path>C:\Users\Drakozi\source\repos\Object-Detection\DataCollection\CaptureData\ObjectPhotos\StanleyCup\StanleyCup.5b669dc6-fe9f-11ee-9765-40ec9998e28d.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>960</width>
+		<height>540</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>StanleyCup</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>286</xmin>
+			<ymin>155</ymin>
+			<xmax>439</xmax>
+			<ymax>521</ymax>
+		</bndbox>
+	</object>
+</annotation>
