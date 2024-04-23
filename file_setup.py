@@ -1,5 +1,6 @@
 # This python file is repsonsible for setting up the entire directory for Tensorflow Model Zoo
 import os
+import subprocess
 
 Custom_Model_Name = 'my_ssd_mobnet'
 Pretrained_Model_Name = 'ssd_mobilenet_v2_fpnlite_320X320_coco17_tpu-8'
@@ -31,3 +32,12 @@ files = {
 for path in paths.values():
     if not os.path.exists(path):
         os.mkdir(path)
+
+# install for the github repo for labeling images
+if not os.path.exists(os.path.join('.', 'DataCollection', 'labelImg')):
+    subprocess.call(f"git clone https://github.com/HumanSignal/labelImg {os.path.join('.', 'DataCollection', 'labelImg')}")
+
+# install for the github repo for tensorflow models
+if not os.path.exists(os.path.join('.', 'APIModels', 'models')):
+   subprocess.call(f"git clone https://github.com/tensorflow/models {os.path.join('.', 'APIModels')}")
+
