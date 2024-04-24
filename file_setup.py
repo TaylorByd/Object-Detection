@@ -1,6 +1,8 @@
 # This python file is repsonsible for setting up the entire directory for Tensorflow Model Zoo
 import os
 import subprocess
+import wget
+from zipfile import ZipFile
 
 Custom_Model_Name = 'my_ssd_mobnet'
 Pretrained_Model_Name = 'ssd_mobilenet_v2_fpnlite_320X320_coco17_tpu-8'
@@ -41,3 +43,10 @@ if not os.path.exists(os.path.join('.', 'DataCollection', 'labelImg')):
 if not os.path.exists(os.path.join('.', 'APIModels', 'models')):
    subprocess.call(f"git clone https://github.com/tensorflow/models {os.path.join('.', 'APIModels')}")
 
+url="https://github.com/protocolbuffers/protobuf/releases/download/v3.15.6/protoc-3.15.6-win64.zip"
+wget.download(url)
+
+with ZipFile('protoc-3.15.6-win64.zip', 'r') as file:
+    file.extractall(paths['Protoc_Path'])
+
+os.remove("protoc-3.15.6-win64.zip")
