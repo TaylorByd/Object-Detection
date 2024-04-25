@@ -154,8 +154,7 @@ cython_debug/
 
 # Github repos
 DataCollection/labelImg/
-APIModels/
-Protoc/
+yolov5/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

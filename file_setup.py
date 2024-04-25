@@ -50,3 +50,4 @@ with ZipFile('protoc-3.15.6-win64.zip', 'r') as file:
     file.extractall(paths['Protoc_Path'])
 
 os.remove("protoc-3.15.6-win64.zip")
+
